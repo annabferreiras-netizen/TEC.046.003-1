@@ -11,21 +11,21 @@ class Animal {
 
 class Gato extends Animal {
     ronronar() {
-        console.log(`O ${this.nome} está ronronando.`)
+        console.log(`O ${this.nome} está ronronando.`);
     }
 
 }
 
 class Cachorro extends Animal {
     abanarRabo() {
-        console.log(`O ${this.nome} está feliz.`)
+        console.log(`O ${this.nome} está feliz.`);
     }
 }
 
 
-class calopsita extends Animal {
+class Calopsita extends Animal {
     voar() {
-        console.log(`A ${this.nome} está voando.`)
+        console.log(`A ${this.nome} está voando.`);
     }
 
 }
