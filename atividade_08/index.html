@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Aprender DOM</title>
+    </head>
+    <body>
+        <h1>Modelo de Objeto de Documentos</h1>
+        <a id="nav" href="index.html">Página Inicial</a>
+        <img id="lampada" src="apagada.png" />
+        <button onclick="ligar()">Ligar</button>
+        <button onclick="desligar()">Desligar</button>
+        <script>
+          function ligar()
+           {
+
+            document.getElementById('lampada').src = 'acesa.png';
+
+          }
+           function desligar()
+           {
+
+            document.getElementById('lampada').src = 'apagada.png';
+
+          }
+
+          </script>
+    </body>
+</html>
