@@ -19,37 +19,38 @@
                     <!-- Status do Heroi -->
                     <div class="col">
                         <ul class="list-group float-end text-center" style="width: 225px">
-                            <li class="list-group-item">Zenitsu</li>
-                            <li class="list-group-item">Caçador de Demônios</li>
+
+                            <li class="list-group-item"><strong id="hero-name"></strong></li>
+                            <li id="titulo-hero" class="list-group-item"></li>
                             <li class="list-group-item">
                                 ❤️
-                                <progress value="100" max="100" style="accent-color: red;"></progress>
+                                <progress id="hp-hero" value="100" max="100" style="accent-color: red;"></progress>
                             </li>
                             <li class="list-group-item">
                                 ⚔️
-                                <progress value="100" max="100" style="accent-color: grey;"></progress>
+                                <progress id="mana-hero" value="100" max="100" style="accent-color: grey;"></progress>
                             </li>
                             <li class="list-group-item">
                                 ⚡
-                                <progress value="0" max="100" style="accent-color: orange;"></progress>
+                                <progress id="en-hero" value="0" max="100" style="accent-color: orange;"></progress>
                             </li>
                         </ul>
                     </div>
                     <!-- Status do Inimigo -->
                     <div class="col"> <ul class="list-group float-start text-center" style="width: 225px">
-                            <li class="list-group-item">Nezuko</li>
-                            <li class="list-group-item">Demônio</li>
+                            <li class="list-group-item"><strong id="boss-name"></strong></li>
+                            <li class="list-group-item" id="titulo-boss"></li>
                             <li class="list-group-item">
                                 🩷
-                                <progress value="100" max="100" style="accent-color: rgb(244, 83, 250);"></progress>
+                                <progress id="hp-boss" value="100" max="100" style="accent-color: rgb(244, 83, 250);"></progress>
                             </li>
                             <li class="list-group-item">
                                 ⚔️
-                                <progress value="100" max="100" style="accent-color: grey;"></progress>
+                                <progress id="mana-boss" value="100" max="100" style="accent-color: grey;"></progress>
                             </li>
                             <li class="list-group-item">
                                 🦋
-                                <progress value="0" max="100" style="accent-color: rgb(243, 151, 45);"></progress>
+                                <progress id="en-boss" value="0" max="100" style="accent-color: rgb(243, 151, 45);"></progress>
                             </li>
                         </ul> 
                     </div>
@@ -58,10 +59,11 @@
                     <!-- img hero -->
                     <div class="col text-end">
                         <img src="assets/zemitsu.gif" width="220" height="209" />
+                        <div id="controles"></div>
                     </div>
                           <!-- img boss -->
                     <div class="col">
-                        <img src="assets/nezuko.gif" width="200" height="209" /> 
+                        <img src="assets/pato.gif" width="200" height="209" /> 
                     </div>    
             </div>
             <div class="card-footer"> 
@@ -70,8 +72,8 @@
                  <small class="text-muted">Ações do inimigo</small>
             </div>
 
-        </div> <!-- fechamento od card -->
-    </div> <!-- fechamento do container -->
-</body>
-
+            </div> <!-- fechamento od card -->
+        </div> <!-- fechamento do container -->
+    </body>
+    <script src="javascript.js"></script>
 </html>
