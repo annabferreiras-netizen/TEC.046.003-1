@@ -37,12 +37,14 @@
                         </ul>
                     </div>
                     <!-- Status do Inimigo -->
-                    <div class="col"> <ul class="list-group float-start text-center" style="width: 225px">
+                    <div class="col">
+                        <ul class="list-group float-start text-center" style="width: 225px">
                             <li class="list-group-item"><strong id="boss-name"></strong></li>
                             <li class="list-group-item" id="titulo-boss"></li>
                             <li class="list-group-item">
                                 🩷
-                                <progress id="hp-boss" value="100" max="100" style="accent-color: rgb(244, 83, 250);"></progress>
+                                <progress id="hp-boss" value="100" max="100"
+                                    style="accent-color: rgb(244, 83, 250);"></progress>
                             </li>
                             <li class="list-group-item">
                                 ⚔️
@@ -50,30 +52,33 @@
                             </li>
                             <li class="list-group-item">
                                 🦋
-                                <progress id="en-boss" value="0" max="100" style="accent-color: rgb(243, 151, 45);"></progress>
+                                <progress id="en-boss" value="0" max="100"
+                                    style="accent-color: rgb(243, 151, 45);"></progress>
                             </li>
-                        </ul> 
+                        </ul>
                     </div>
                 </div> <!-- fechamento da row -->
                 <div class="row">
                     <!-- img hero -->
                     <div class="col text-end">
                         <img src="assets/zemitsu.gif" width="220" height="209" />
-                        <div id="controles"></div>
+                        <div></div>
+                        <div class="btn-group" id="controles"></div>
                     </div>
-                          <!-- img boss -->
+                    //<!-- img boss -->
                     <div class="col">
-                        <img src="assets/pato.gif" width="200" height="209" /> 
-                    </div>    
-            </div>
-            <div class="card-footer"> 
-                 <small class="text-muted">Ações do herói</small>
-                 <p></p>
-                 <small class="text-muted">Ações do inimigo</small>
-            </div>
+                        <img src="assets/pato.gif" width="200" height="209" />
+                    </div>
+                    <div></div>
+                    <div class="card-footer">
+                        <small class="text-muted">Ações do herói</small>
+                        <p></p>
+                        <small class="text-muted">Ações do inimigo</small>
+                    </div>
 
-            </div> <!-- fechamento od card -->
-        </div> <!-- fechamento do container -->
-    </body>
-    <script src="javascript.js"></script>
+                </div> <!-- fechamento od card -->
+            </div> <!-- fechamento do container -->
+</body>
+<script src="javascript.js"></script>
+
 </html>

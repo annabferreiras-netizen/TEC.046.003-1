@@ -24,9 +24,15 @@ document.getElementById("titulo-hero").textContent = hero.titulo;
 document.getElementById("boss-name").textContent = boss.nome;
 document.getElementById("titulo-boss").textContent = boss.titulo;
 //Criar Habilidades
+let containerBtn = document.getElementById("controles");
 let listaHabilidades = [
 new Habilidades(1, "Ataque", 4, 0, 0),
 new Habilidades(2, "Skill", 8, 10, 0),
 new Habilidades(3, "Supremo", 15, 0, 100),
 
 ];
+listaHabilidades.forEach(hab => {
+    let btn = document.createElement("button");//<button>
+    btn.innerText = hab.nome;
+    containerBtn.appendChild(btn);
+});
